@@ -1,0 +1,9 @@
+{
+  "urlBaseReqres": "https://reqres.in/api/",
+  "urlBaseGoRest": "https://gorest.co.in/public/v2/",
+  "token": "",
+  "header":
+    {
+      "x-api-key": "reqres-free-v1"
+    }
+}
