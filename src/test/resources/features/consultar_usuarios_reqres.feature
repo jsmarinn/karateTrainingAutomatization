@@ -10,7 +10,7 @@ Feature: Consultar usuarios en el API.
     * print response
 
   Scenario: Obtener un usuario a partir del id.
-    Given path 'users/2'
+    Given path 'users/254'
     When method get
     Then status 200
     * print response

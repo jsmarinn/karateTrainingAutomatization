@@ -9,3 +9,4 @@ Feature: Creación de usuario en ReqRes
     When method post
     Then status 201
     * print response
+    * match response == {"name": "Juan", "job": "QA Analyst", "id": "#notnull", "createdAt": "#notnull"}
