@@ -2,7 +2,7 @@ Feature: Creación de usuario en ReqRes
   Background:
     * def configReqRes = read('classpath:configuration/config.json')
     * url configReqRes.urlBaseReqres
-    * header x-api-key = "reqres-free-v1"
+    * headers configReqRes.headers
     * request createUser = read('classpath:data/user_creation_reqres.json')
   Scenario: Creación de usuario exitoso.
     Given path 'users'

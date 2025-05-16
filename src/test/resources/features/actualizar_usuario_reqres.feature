@@ -3,7 +3,7 @@ Feature: Actualización de usuario
     * def configReq = read('classpath:configuration/config.json')
     * url configReq.urlBaseReqres
     * request updateUser = {"name": "Camilo", "job": "Obrero"}
-    * header x-api-key = "reqres-free-v1"
+    * headers configReq.headers
     Scenario: Actualización de usuario de forma exitosa.
       Given path 'users/2'
       When method put
